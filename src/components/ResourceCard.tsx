@@ -28,10 +28,11 @@ export default function ResourceCard({
 
         <a
           href={pdf}
-          download
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-auto block text-center bg-blue-500 text-white text-sm md:text-base py-2 md:py-3 rounded-xl hover:bg-blue-600 transition"
         >
-          Descargar PDF
+          Abrir PDF
         </a>
 
       </div>
