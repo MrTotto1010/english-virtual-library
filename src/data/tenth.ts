@@ -1,4 +1,6 @@
 import TenthBookCover from "../assets/covers/english/10th/10thBookCover.png";
+import TenthGAWCover from "../assets/covers/english/10th/10thGAWCover.png";
+import TenthSpeakingCover from "../assets/covers/english/10th/10thSpeakingCover.png";
 
 import Unit1Cover from "../assets/covers/english/10th/Unit1Cover.png";
 import Unit2Cover from "../assets/covers/english/10th/Unit2Cover.png";
@@ -9,12 +11,12 @@ import Unit6Cover from "../assets/covers/english/10th/Unit6Cover.png";
 
 export const tenth = {
   id: "10",
-  name: "Decimo",
+  name: "Tenth",
 
   sections: [
     {
       id: "complete-book",
-      title: "Libro completo",
+      title: "Complete Book",
 
       resources: [
         {
@@ -30,7 +32,7 @@ export const tenth = {
 
     {
       id: "chapters",
-      title: "Capitulos",
+      title: "Chapters",
 
       resources: [
         {
@@ -91,9 +93,27 @@ export const tenth = {
 
     {
       id: "practices",
-      title: "Practicas",
+      title: "Practice",
 
-      resources: [],
+      resources: [
+        {
+          id: "10th-grammar-and-writing",
+          title: "Grammar and Writing",
+
+          cover: TenthGAWCover,
+
+          pdf: "https://drive.google.com/file/d/1q5c3a9K7m2V8x4L6n0P1r5T9w3Y7u2B/view?usp=drive_link",
+        },
+
+        {
+          id: "10th-speaking",
+          title: "Speaking",
+
+          cover: TenthSpeakingCover,
+
+          pdf: "https://drive.google.com/file/d/1r6d4b0L8n3W9y5M7p1Q2s6U0x4Z8v3C/view?usp=drive_link",
+        },
+      ],
     },
   ],
 };

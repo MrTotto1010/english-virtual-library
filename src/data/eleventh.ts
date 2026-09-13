@@ -1,4 +1,6 @@
 import EleventhBookCover from "../assets/covers/english/11th/11thBookCover.png";
+import EleventhGAWCover from "../assets/covers/english/11th/11thGAWCover.png";
+import EleventhSpeakingCover from "../assets/covers/english/11th/11thSpeakingCover.png";
 
 import Unit1Cover from "../assets/covers/english/11th/Unit1Cover.png";
 import Unit2Cover from "../assets/covers/english/11th/Unit2Cover.png";
@@ -8,12 +10,12 @@ import Unit5Cover from "../assets/covers/english/11th/Unit5Cover.png";
 
 export const eleventh = {
   id: "11",
-  name: "Undecimo",
+  name: "Eleventh",
 
   sections: [
     {
       id: "complete-book",
-      title: "Libro completo",
+      title: "Complete Book",
 
       resources: [
         {
@@ -29,7 +31,7 @@ export const eleventh = {
 
     {
       id: "chapters",
-      title: "Capitulos",
+      title: "Chapters",
 
       resources: [
         {
@@ -81,9 +83,27 @@ export const eleventh = {
 
     {
       id: "practices",
-      title: "Practicas",
+      title: "Practice",
 
-      resources: [],
+      resources: [
+        {
+          id: "11th-grammar-and-writing",
+          title: "Grammar and Writing",
+
+          cover: EleventhGAWCover,
+
+          pdf: "https://drive.google.com/file/d/1ApGm9288dUDJol-oPQOAz5TH8oe8Sa3v/view?usp=drive_link",
+        },
+
+        {
+          id: "11th-speaking",
+          title: "Speaking",
+
+          cover: EleventhSpeakingCover,
+
+          pdf: "https://drive.google.com/file/d/1fxmyJzSLz3q1iLSQsM2881a_v7b7RjLv/view?usp=drive_link",
+        },
+      ],
     },
   ],
 };

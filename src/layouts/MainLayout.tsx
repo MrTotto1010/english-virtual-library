@@ -12,14 +12,12 @@ export default function MainLayout({
   title,
 }: MainLayoutProps) {
   return (
-    <div className="min-h-screen bg-gray-100">
-      
+    <div className="min-h-screen bg-cream">
       <Navbar title={title} />
 
-      <main className="max-w-7xl mx-auto px-4 py-6 md:p-10">
+      <main className="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 sm:py-8 md:px-8 md:py-10">
         {children}
       </main>
-
     </div>
   );
 }

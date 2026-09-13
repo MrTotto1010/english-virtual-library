@@ -10,32 +10,30 @@ export default function ResourceCard({
   pdf,
 }: ResourceCardProps) {
   return (
-    <div className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col hover:scale-[1.02] transition duration-300">
-      
-      <div className="bg-gray-50 p-2 md:p-4">
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-primary-light bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+      <div className="flex aspect-[17/22] items-center justify-center bg-primary-light/30 p-4 sm:p-5">
         <img
           src={cover}
-          alt={title}
-          className="w-full aspect-[17/22] object-contain"
+          alt={`${title} cover`}
+          loading="lazy"
+          className="h-full w-full object-contain transition duration-300 group-hover:scale-[1.02]"
         />
       </div>
 
-      <div className="p-3 md:p-5 flex flex-col flex-1">
-        
-        <h4 className="text-base md:text-xl font-semibold mb-4 line-clamp-2">
+      <div className="flex flex-1 flex-col p-4 sm:p-5">
+        <h3 className="line-clamp-3 text-base font-bold leading-snug text-primary sm:text-lg">
           {title}
-        </h4>
+        </h3>
 
         <a
           href={pdf}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-auto block text-center bg-blue-500 text-white text-sm md:text-base py-2 md:py-3 rounded-xl hover:bg-blue-600 transition"
+          className="mt-5 inline-flex min-h-11 items-center justify-center rounded-xl bg-primary px-4 py-2.5 text-center text-sm font-bold text-white transition hover:bg-primary-dark focus-visible:outline-none sm:text-base"
         >
-          Abrir PDF
+          Open PDF
         </a>
-
       </div>
-    </div>
+    </article>
   );
 }

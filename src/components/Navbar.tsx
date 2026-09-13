@@ -4,40 +4,40 @@ type NavbarProps = {
   title: string;
 };
 
-export default function Navbar({
-  title,
-}: NavbarProps) {
+export default function Navbar({ title }: NavbarProps) {
   const navigate = useNavigate();
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md">
-      
-      <div className="max-w-7xl mx-auto px-4 py-3">
-        
-        <div className="flex items-center justify-between gap-3">
-          
+    <header className="sticky top-0 z-50 border-b border-primary-light/70 bg-cream/95 backdrop-blur-md">
+      <div className="mx-auto w-full max-w-7xl px-3 py-3 sm:px-4 md:px-8">
+        <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2 sm:gap-4">
           <button
+            type="button"
             onClick={() => navigate(-1)}
-            className="shrink-0 bg-gray-200 text-sm md:text-base px-3 md:px-4 py-2 rounded-xl hover:bg-gray-300 transition"
+            aria-label="Go back to the previous page"
+            className="inline-flex min-h-10 items-center justify-center rounded-xl border border-primary-light bg-white px-3 text-sm font-semibold text-primary transition-colors hover:border-primary hover:bg-primary-light focus-visible:outline-none sm:px-4 sm:text-base"
           >
-            ← Volver
+            <span aria-hidden="true" className="mr-1 text-base sm:text-lg">
+              ←
+            </span>
+
+            <span>Back</span>
           </button>
 
-          <h1 className="flex-1 text-center text-base sm:text-lg md:text-2xl font-bold truncate">
-            {title}
+          <h1 className="min-w-0 text-center text-sm font-extrabold leading-tight text-primary sm:text-lg md:text-2xl">
+            <span className="block truncate">{title}</span>
           </h1>
 
           <button
+            type="button"
             onClick={() => navigate("/")}
-            className="shrink-0 bg-blue-500 text-white text-sm md:text-base px-3 md:px-4 py-2 rounded-xl hover:bg-blue-600 transition"
+            aria-label="Go to the home page"
+            className="inline-flex min-h-10 items-center justify-center rounded-xl bg-primary px-3 text-sm font-semibold text-white transition-colors hover:bg-primary-dark focus-visible:outline-none sm:px-4 sm:text-base"
           >
-            Inicio
+            Home
           </button>
-
         </div>
-
       </div>
-
     </header>
   );
 }

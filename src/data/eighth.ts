@@ -1,4 +1,6 @@
 import EighthBookCover from "../assets/covers/english/8th/8thBookCover.png";
+import EighthGAWCover from "../assets/covers/english/8th/8thGAWCover.png";
+import EighthSpeakingCover from "../assets/covers/english/8th/8thSpeakingCover.png";
 
 import Unit1Cover from "../assets/covers/english/8th/Unit1Cover.png";
 import Unit2Cover from "../assets/covers/english/8th/Unit2Cover.png";
@@ -9,12 +11,12 @@ import Unit6Cover from "../assets/covers/english/8th/Unit6Cover.png";
 
 export const eighth = {
   id: "8",
-  name: "Octavo",
+  name: "Eighth",
 
   sections: [
     {
       id: "complete-book",
-      title: "Libro completo",
+      title: "Complete Book",
 
       resources: [
         {
@@ -30,7 +32,7 @@ export const eighth = {
 
     {
       id: "chapters",
-      title: "Capitulos",
+      title: "Chapters",
 
       resources: [
         {
@@ -91,9 +93,27 @@ export const eighth = {
 
     {
       id: "practices",
-      title: "Practicas",
+      title: "Practice",
 
-      resources: [],
+      resources: [
+        {
+          id: "8th-grammar-and-writing",
+          title: "Grammar and Writing",
+
+          cover: EighthGAWCover,
+
+          pdf: "https://drive.google.com/file/d/1U2oWCSl1HVbdJ6WKIAtr2778BQJ3oH4u/view?usp=drive_link",
+        },
+
+        {
+          id: "8th-speaking",
+          title: "Speaking",
+
+          cover: EighthSpeakingCover,
+
+          pdf: "https://drive.google.com/file/d/1iBXgGIcS_VrdM2jk7zPk9ifiO5x4krmg/view?usp=drive_link",
+        },
+      ],
     },
   ],
 };

@@ -9,7 +9,7 @@ import { eleventh } from "./eleventh";
 export const subjects: Subject[] = [
   {
     id: "english",
-    name: "Ingles",
+    name: "English",
 
     grades: [
       seventh,

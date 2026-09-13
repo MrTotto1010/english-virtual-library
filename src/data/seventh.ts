@@ -1,4 +1,6 @@
 import SeventhBookCover from "../assets/covers/english/7th/7thBookCover.png";
+import SeventhGAWCover from "../assets/covers/english/7th/7thGAWCover.png";
+import SeventhSpeakingCover from "../assets/covers/english/7th/7thSpeakingCover.png";
 
 import Unit1Cover from "../assets/covers/english/7th/Unit1Cover.png";
 import Unit2Cover from "../assets/covers/english/7th/Unit2Cover.png";
@@ -9,12 +11,12 @@ import Unit6Cover from "../assets/covers/english/7th/Unit6Cover.png";
 
 export const seventh = {
   id: "7",
-  name: "Setimo",
+  name: "Seventh",
 
   sections: [
     {
       id: "complete-book",
-      title: "Libro completo",
+      title: "Complete Book",
 
       resources: [
         {
@@ -30,7 +32,7 @@ export const seventh = {
 
     {
       id: "chapters",
-      title: "Capitulos",
+      title: "Chapters",
 
       resources: [
         {
@@ -91,9 +93,27 @@ export const seventh = {
 
     {
       id: "practices",
-      title: "Practicas",
+      title: "Practice",
 
-      resources: [],
+      resources: [
+        {
+          id: "7th-grammar-and-writing",
+          title: "Grammar and Writing",
+
+          cover: SeventhGAWCover,
+
+          pdf: "https://drive.google.com/file/d/1h2jAy6wMKjXjb3kqc48UCtaIYIoHZC70/view?usp=sharing",
+        },
+
+        {
+          id: "7th-speaking",
+          title: "Speaking",
+
+          cover: SeventhSpeakingCover,
+
+          pdf: "https://drive.google.com/file/d/1sULK8MwkQzzUVPVec9W6eqSp7WaDsAyS/view?usp=drive_link",
+        },
+      ],
     },
   ],
 };
